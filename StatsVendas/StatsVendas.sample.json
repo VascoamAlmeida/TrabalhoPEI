@@ -1,0 +1,322 @@
+[
+  {
+    "_id": {
+      "month": 9,
+      "year": 2022
+    },
+    "total_sale_month": 10306926.7918,
+    "total_product": 5,
+    "stats_product": [
+      {
+        "product": 17,
+        "total_month": 23,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      },
+      {
+        "product": 800,
+        "total_month": 21,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      },
+      {
+        "product": 848,
+        "total_month": 30,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      },
+      {
+        "product": 540,
+        "total_month": 17,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Medium Storage"
+          }
+        ]
+      },
+      {
+        "product": 406,
+        "total_month": 25,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "month": 2,
+      "year": 2022
+    },
+    "total_sale_month": 24401106.3331,
+    "total_product": 5,
+    "stats_product": [
+      {
+        "product": 196,
+        "total_month": 58,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      },
+      {
+        "product": 694,
+        "total_month": 48,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      },
+      {
+        "product": 417,
+        "total_month": 59,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Medium Storage"
+          }
+        ]
+      },
+      {
+        "product": 323,
+        "total_month": 47,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Low Storage"
+          }
+        ]
+      },
+      {
+        "product": 303,
+        "total_month": 53,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ]
+      }
+    ]
+  }
+]

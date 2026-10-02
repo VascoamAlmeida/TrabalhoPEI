@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Root>
+  <data>
+    <record>
+      <_id>2022-05</_id>
+      <month>5</month>
+      <year>2022</year>
+      <sum_item_monthly>3494</sum_item_monthly>
+      <monthly_refund>
+        <product>
+          <product_id>813</product_id>
+          <sum_item_monthly>6</sum_item_monthly>
+          <brand>vivo</brand>
+          <model>Vivo Y20G</model>
+          <list_price>13990</list_price>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>Basic Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Basic Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>Medium Storage</sub_category>
+          </categoria>
+          <invoice>
+            <invoice_id>1366606</invoice_id>
+            <return_date>2022-05-05T00:00:00Z</return_date>
+          </invoice>
+          <invoice>
+            <invoice_id>1750807</invoice_id>
+            <return_date>2022-05-22T00:00:00Z</return_date>
+          </invoice>
+          <invoice>
+            <invoice_id>3668822</invoice_id>
+            <return_date>2022-05-30T00:00:00Z</return_date>
+          </invoice>
+          </product>
+        <product>
+          <product_id>308</product_id>
+          <sum_item_monthly>2</sum_item_monthly>
+          <brand>oneplus</brand>
+          <model>OnePlus Nord 5</model>
+          <list_price>34999</list_price>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Pro-Level Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+          <invoice>
+            <invoice_id>2149448</invoice_id>
+            <return_date>2022-05-25T00:00:00Z</return_date>
+          </invoice>
+          <invoice>
+            <invoice_id>693991</invoice_id>
+            <return_date>2022-05-13T00:00:00Z</return_date>
+          </invoice>
+        </product>
+        <product>
+          <product_id>943</product_id>
+          <sum_item_monthly>2</sum_item_monthly>
+          <brand>xiaomi</brand>
+          <model>Xiaomi Redmi Note 11 Pro Plus 5G (8GB RAM + 128GB)</model>
+          <list_price>22700</list_price>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Pro-Level Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+          <invoice>
+            <invoice_id>2286467</invoice_id>
+            <return_date>2022-05-07T00:00:00Z</return_date>
+          </invoice>
+          <invoice>
+            <invoice_id>933516</invoice_id>
+            <return_date>2022-05-21T00:00:00Z</return_date>
+          </invoice>
+        </product>
+        <product>
+          <product_id>430</product_id>
+          <sum_item_monthly>2</sum_item_monthly>
+          <brand>poco</brand>
+          <model>POCO M3 Pro 5G (6GB RAM + 128GB)</model>
+          <list_price>14799</list_price>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>Standard Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Good Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+          <invoice>
+            <invoice_id>1158562</invoice_id>
+            <return_date>2022-05-16T00:00:00Z</return_date>
+          </invoice>
+          <invoice>
+            <invoice_id>6831411</invoice_id>
+            <return_date>2022-05-15T00:00:00Z</return_date>
+          </invoice>
+        </product>
+        <product>
+          <product_id>739</product_id>
+          <sum_item_monthly>1</sum_item_monthly>
+          <brand>vivo</brand>
+          <model>Vivo T1 44W (6GB RAM + 128GB)</model>
+          <list_price>15999</list_price>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>Standard Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Good Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+          <invoice>
+            <invoice_id>4443077</invoice_id>
+            <return_date>2022-05-09T00:00:00Z</return_date>
+          </invoice>
+        </product>
+        </monthly_refund>
+    </record>
+    </data>
+</Root>

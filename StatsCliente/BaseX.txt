@@ -1,0 +1,42 @@
+module namespace page = 'http://basex.org/examples/web-page';
+
+(: API key is read from the environment; never commit credentials. :)
+declare variable $page:api-key := environment-variable('MONGODB_DATA_API_KEY');
+declare variable $page:data-api := environment-variable('MONGODB_DATA_API_URL');
+
+declare
+  %rest:GET
+  %rest:path('/StatsCliente')
+  %output:method('xml')
+function page:stats-cliente() {
+  if (empty($page:api-key)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_KEY nao esta definida.</error>
+  else if (empty($page:data-api)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_URL nao esta definida.</error>
+  else
+    let $json-data := '{
+      "dataSource": "Cluster0",
+      "database": "PEI_trabalhoPratico",
+      "collection": "total_per_customer"
+    }'
+    let $response := http:send-request(
+      <http:request method='post'>
+        <http:header name='api-key' value='{$page:api-key}'/>
+        <http:body media-type='application/json'>{$json-data}</http:body>
+      </http:request>,
+      $page:data-api
+    )
+    return
+      <Root>
+        <data>{
+          for $document in $response[2]/documents/_
+          return
+            <record>
+              <_id>{string($document/__id)}</_id>
+              <total_per_customer>{string($document/total__per__customer)}</total_per_customer>
+              <num_invoices>{string($document/num__invoices)}</num_invoices>
+              <sum_items>{string($document/sum__items)}</sum_items>
+            </record>
+        }</data>
+      </Root>
+};

@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 392,
+    "total_per_customer": 183159.0196,
+    "num_invoices": 282,
+    "sum_items": 563
+  },
+  {
+    "_id": 402,
+    "total_per_customer": 184331.9812,
+    "num_invoices": 334,
+    "sum_items": 636
+  },
+  {
+    "_id": 489,
+    "total_per_customer": 150432.3754,
+    "num_invoices": 266,
+    "sum_items": 439
+  },
+  {
+    "_id": 235,
+    "total_per_customer": 343342.5984,
+    "num_invoices": 433,
+    "sum_items": 1091
+  },
+  {
+    "_id": 99,
+    "total_per_customer": 808013.9077,
+    "num_invoices": 639,
+    "sum_items": 2337
+  },
+  {
+    "_id": 487,
+    "total_per_customer": 114233.8115,
+    "num_invoices": 240,
+    "sum_items": 387
+  },
+  {
+    "_id": 275,
+    "total_per_customer": 304816.1743,
+    "num_invoices": 400,
+    "sum_items": 1015
+  },
+  {
+    "_id": 337,
+    "total_per_customer": 221114.4792,
+    "num_invoices": 334,
+    "sum_items": 727
+  },
+  {
+    "_id": 376,
+    "total_per_customer": 203785.1181,
+    "num_invoices": 345,
+    "sum_items": 668
+  },
+  {
+    "_id": 576,
+    "total_per_customer": 82078.9277,
+    "num_invoices": 214,
+    "sum_items": 278
+  }
+]

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="devolucoes" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="devolucao" type="devolucaoType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="InfoItensTodos" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InfoItensTodos" type="infoItemType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="categoria" type="categoriasType" minOccurs="0"/>
+        <xs:element name="InfoGeral" type="infoGeralType" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="devolucaoType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:string"/>
+      <xs:element name="invoice_id" type="xs:integer"/>
+      <xs:element name="date_sale" type="xs:dateTime"/>
+      <xs:element name="date_return" type="xs:dateTime"/>
+      <xs:element name="product_id" type="xs:integer"/>
+      <xs:element name="customer_id" type="xs:integer"/>
+      <xs:element name="num_dia_return" type="xs:integer"/>
+      <xs:element name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="infoItemType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:integer"/>
+      <xs:element name="categoria" type="categoriasType" minOccurs="0"/>
+      <xs:element name="list_price" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="brand" type="xs:string" minOccurs="0"/>
+      <xs:element name="model" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriasType">
+    <xs:sequence>
+      <xs:element name="categoria" type="categoriaType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriaType">
+    <xs:sequence>
+      <xs:element name="category" type="xs:string"/>
+      <xs:element name="sub_category" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="infoGeralType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:integer"/>
+      <xs:element name="NIF" type="xs:string"/>
+      <xs:element name="first_name" type="xs:string"/>
+      <xs:element name="last_name" type="xs:string"/>
+      <xs:element name="Ano_Fiscal" type="xs:string"/>
+      <xs:element name="address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

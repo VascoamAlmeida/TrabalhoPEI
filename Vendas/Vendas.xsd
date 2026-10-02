@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data" type="dataType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dataType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:string"/>
+      <xs:element name="invoice_id" type="xs:integer"/>
+      <xs:element name="date" type="xs:dateTime"/>
+      <xs:element name="customer_id" type="xs:integer"/>
+      <xs:element name="sales" type="salesType"/>
+      <xs:element name="InfoCliente" type="infoClienteType"/>
+      <xs:element name="InfoProduto" type="infoProdutoType"/>
+      <xs:element name="InfoGeral" type="infoGeralDetailType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salesType">
+    <xs:sequence>
+      <xs:element name="sale" type="saleType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saleType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:integer"/>
+      <xs:element name="total_with_vat" type="xs:decimal"/>
+      <xs:element name="quantity" type="xs:integer"/>
+      <xs:element name="product_id" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="infoClienteType">
+    <xs:sequence>
+      <xs:element name="cliente" type="clienteType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="clienteType">
+    <xs:sequence>
+      <xs:element name="first_name" type="xs:string"/>
+      <xs:element name="last_name" type="xs:string"/>
+      <xs:element name="email" type="emailType"/>
+      <xs:element name="posta_code" type="xs:string"/>
+      <xs:element name="city" type="xs:string"/>
+      <xs:element name="country" type="xs:string"/>
+      <xs:element name="status" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="infoProdutoType">
+    <xs:sequence>
+      <xs:element name="produto" type="produtoType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="produtoType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:integer"/>
+      <xs:element name="categoria" type="categoriasType" minOccurs="0"/>
+      <xs:element name="list_price" type="xs:decimal"/>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="model" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriasType">
+    <xs:sequence>
+      <xs:element name="categoria" type="categoriaType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriaType">
+    <xs:sequence>
+      <xs:element name="category" type="xs:string"/>
+      <xs:element name="sub_category" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="infoGeralDetailType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:integer"/>
+      <xs:element name="NIF" type="NIFType"/>
+      <xs:element name="first_name" type="xs:string"/>
+      <xs:element name="last_name" type="xs:string"/>
+      <xs:element name="Ano_Fiscal" type="xs:string"/>
+      <xs:element name="address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="NIFType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="desconhecido|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

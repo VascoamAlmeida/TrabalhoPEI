@@ -1,0 +1,74 @@
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <devolucoes>
+        <devolucao>
+            <_id>65a8f71099be844722feede6</_id>
+            <invoice_id>6889534</invoice_id>
+            <date_sale>2022-01-11T00:00:00.000Z</date_sale>
+            <date_return>2022-01-20T00:00:00.000Z</date_return>
+            <product_id>686</product_id>
+            <customer_id>251</customer_id>
+            <num_dia_return>9</num_dia_return>
+            <return>regular</return>
+        </devolucao>
+    </devolucoes>
+    <InfoItensTodos>
+        <InfoItensTodos>
+            <_id>811</_id>
+            <categoria>
+                <categoria>
+                    <category>Price Range</category>
+                    <sub_category>Mid-Range Smartphones</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Performance</category>
+                    <sub_category>Basic Performance</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Camara Quality</category>
+                    <sub_category>Basic Camara</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Screen Size</category>
+                    <sub_category>Large</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Battery Life</category>
+                    <sub_category>Average Battery Life</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Storage Capacity</category>
+                    <sub_category>Medium Storage</sub_category>
+                </categoria>
+            </categoria>
+            <list_price>12489</list_price>
+            <brand>vivo</brand>
+            <model>Vivo Y16 (4GB RAM + 64GB)</model>
+        </InfoItensTodos>
+        <InfoItensTodos>
+            <_id>686</_id>
+            <categoria>
+                <categoria>
+                    <category>Price Range</category>
+                    <sub_category>High-End Smartphones</sub_category>
+                </categoria>
+            </categoria>
+            <list_price>154998</list_price>
+            <brand>samsung</brand>
+            <model>Samsung Galaxy Z Fold 4</model>
+        </InfoItensTodos>
+    </InfoItensTodos>
+    <categoria>
+        <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+        </categoria>
+    </categoria>
+    <InfoGeral>
+        <id>1</id>
+        <NIF>123456789</NIF>
+        <first_name>ANDRE</first_name>
+        <last_name>ALMEIDA</last_name>
+        <Ano_Fiscal>2020</Ano_Fiscal>
+        <address>420 PEIREIRA SILVA</address>
+    </InfoGeral>
+</Root>

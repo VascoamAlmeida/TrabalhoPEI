@@ -1,0 +1,10 @@
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <data>
+        <record>
+            <_id>392</_id>
+            <total_per_customer>183159.0196</total_per_customer>
+            <num_invoices>282</num_invoices>
+            <sum_items>563</sum_items>
+        </record>
+    </data>
+</Root>

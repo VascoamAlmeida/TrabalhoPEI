@@ -1,0 +1,59 @@
+CRIAÇÃO DA COLEÇÃO INTERMÉDIA: total_per_invoice
+Executar sobre a coleção sales_lines.
+
+[
+  {
+    $group: {
+      _id: "$invoice_id",
+      totalvat_per_invoice: { $sum: "$total_with_vat" },
+      total_item_per_invoice: { $count: {} }
+    }
+  },
+  {
+    $out: "total_per_invoice"
+  }
+]
+
+CRIAÇÃO DA COLEÇÃO FINAL: total_per_customer
+Executar sobre a coleção sales_header.
+Considera apenas compras dos últimos 3 anos, como pedido no enunciado.
+
+[
+  {
+    $match: {
+      date: {
+        $gte: {
+          $dateSubtract: {
+            startDate: "$$NOW",
+            unit: "year",
+            amount: 3
+          }
+        }
+      }
+    }
+  },
+  {
+    $lookup: {
+      from: "total_per_invoice",
+      localField: "invoice_id",
+      foreignField: "_id",
+      as: "invoice_total"
+    }
+  },
+  {
+    $unwind: {
+      path: "$invoice_total"
+    }
+  },
+  {
+    $group: {
+      _id: "$customer_id",
+      total_per_customer: { $sum: "$invoice_total.totalvat_per_invoice" },
+      num_invoices: { $sum: 1 },
+      sum_items: { $sum: "$invoice_total.total_item_per_invoice" }
+    }
+  },
+  {
+    $out: "total_per_customer"
+  }
+]

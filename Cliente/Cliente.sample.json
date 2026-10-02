@@ -1,0 +1,131 @@
+[
+  {
+    "_id": {
+      "$oid": "659d52bae54606396df898a2"
+    },
+    "first_name": "MARY",
+    "last_name": "SMITH",
+    "email": "MARY.SMITH@sakilacustomer.org",
+    "ative": 1,
+    "gender": "M",
+    "birthDate": {
+      "$date": {
+        "$numberLong": "-29116800000"
+      }
+    },
+    "customer_id": 1,
+    "create_date": {
+      "$date": "2021-02-14T22:04:36.000Z"
+    },
+    "posta_code": 35200,
+    "city": "Sasebo",
+    "country": "Japan",
+    "total_per_customer": 1525092.4022,
+    "num_invoices": 909,
+    "sum_items": 4622,
+    "since_creat_years": 3,
+    "status": "regular"
+  },
+  {
+    "_id": {
+      "$oid": "659d52bae54606396df898a3"
+    },
+    "first_name": "PATRICIA",
+    "last_name": "JOHNSON",
+    "email": "PATRICIA.JOHNSON@sakilacustomer.org",
+    "ative": 1,
+    "gender": "F",
+    "birthDate": {
+      "$date": "1971-08-01T00:00:00.000Z"
+    },
+    "customer_id": 2,
+    "create_date": {
+      "$date": "2021-02-14T22:04:36.000Z"
+    },
+    "posta_code": 17886,
+    "city": "San Bernardino",
+    "country": "United States",
+    "total_per_customer": 1479458.7098,
+    "num_invoices": 953,
+    "sum_items": 4565,
+    "since_creat_years": 3,
+    "status": "regular"
+  },
+  {
+    "_id": {
+      "$oid": "659d52bae54606396df898a4"
+    },
+    "first_name": "LINDA",
+    "last_name": "WILLIAMS",
+    "email": "LINDA.WILLIAMS@sakilacustomer.org",
+    "ative": 1,
+    "gender": "M",
+    "birthDate": {
+      "$date": "1974-11-12T00:00:00.000Z"
+    },
+    "customer_id": 3,
+    "create_date": {
+      "$date": "2021-02-14T22:04:36.000Z"
+    },
+    "posta_code": 83579,
+    "city": "Athenai",
+    "country": "Greece",
+    "total_per_customer": 1403041.8694,
+    "num_invoices": 926,
+    "sum_items": 4463,
+    "since_creat_years": 3,
+    "status": "regular"
+  },
+  {
+    "_id": {
+      "$oid": "659d52bae54606396df898a5"
+    },
+    "first_name": "BARBARA",
+    "last_name": "JONES",
+    "email": "BARBARA.JONES@sakilacustomer.org",
+    "ative": 1,
+    "gender": "M",
+    "birthDate": {
+      "$date": "1974-12-23T00:00:00.000Z"
+    },
+    "customer_id": 4,
+    "create_date": {
+      "$date": "2021-02-14T22:04:36.000Z"
+    },
+    "posta_code": 53561,
+    "city": "Myingyan",
+    "country": "Myanmar",
+    "total_per_customer": 1280886.4694,
+    "num_invoices": 916,
+    "sum_items": 4122,
+    "since_creat_years": 3,
+    "status": "regular"
+  },
+  {
+    "_id": {
+      "$oid": "659d52bae54606396df898a6"
+    },
+    "first_name": "ELIZABETH",
+    "last_name": "BROWN",
+    "email": "ELIZABETH.BROWN@sakilacustomer.org",
+    "ative": 1,
+    "gender": "F",
+    "birthDate": {
+      "$date": {
+        "$numberLong": "-544752000000"
+      }
+    },
+    "customer_id": 5,
+    "create_date": {
+      "$date": "2021-02-14T22:04:36.000Z"
+    },
+    "posta_code": 42399,
+    "city": "Nantou",
+    "country": "Taiwan",
+    "total_per_customer": 1536629.0081,
+    "num_invoices": 1002,
+    "sum_items": 4863,
+    "since_creat_years": 3,
+    "status": "regular"
+  }
+]

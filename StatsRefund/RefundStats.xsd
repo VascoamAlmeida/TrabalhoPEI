@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="record" type="recordType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="recordType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:string"/>
+      <xs:element name="month" type="xs:integer"/>
+      <xs:element name="year" type="xs:integer"/>
+      <xs:element name="sum_item_monthly" type="xs:integer"/>
+      <xs:element name="monthly_refund" type="monthlyRefundType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="monthlyRefundType">
+    <xs:sequence>
+      <xs:element name="product" type="productType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element name="product_id" type="xs:integer"/>
+      <xs:element name="sum_item_monthly" type="xs:integer"/>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="model" type="xs:string"/>
+      <xs:element name="list_price" type="xs:decimal"/>
+      <xs:element name="categoria" type="categoriaType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="invoice" type="invoiceType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriaType">
+    <xs:sequence>
+      <xs:element name="category" type="xs:string"/>
+      <xs:element name="sub_category" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="invoiceType">
+    <xs:sequence>
+      <xs:element name="invoice_id" type="xs:integer"/>
+      <xs:element name="return_date" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

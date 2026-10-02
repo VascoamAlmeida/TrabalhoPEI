@@ -1,0 +1,101 @@
+AGRESSIONS FEITOS A PARTIR DO INVOICE PARA OBTER FATURAS:
+
+[
+  {
+    $lookup:
+      {
+        from: "customer_final",
+        localField: "customer_id",
+        foreignField: "customer_id",
+        as: "InfoCliente",
+      },
+  },
+  {
+    $project:
+
+      {
+        invoice_id: 1,
+        date: 1,
+        customer_id: 1,
+        sales: 1,
+        "InfoCliente.first_name": 1,
+        "InfoCliente.last_name": 1,
+        "InfoCliente.email": 1,
+        "InfoCliente.posta_code": 1,
+        "InfoCliente.city": 1,
+        "InfoCliente.country": 1,
+        "InfoCliente.status": 1,
+      },
+  },
+  {
+    $lookup:
+
+      {
+        from: "product_final",
+        localField: "sales.product_id",
+        foreignField: "_id",
+        as: "InfoProduto",
+      },
+  },
+  {
+    $project:
+      {
+        invoice_id: 1,
+        date: 1,
+        customer_id: 1,
+        sales: 1,
+        "InfoCliente.first_name": 1,
+        "InfoCliente.last_name": 1,
+        "InfoCliente.email": 1,
+        "InfoCliente.posta_code": 1,
+        "InfoCliente.city": 1,
+        "InfoCliente.country": 1,
+        "InfoCliente.status": 1,
+        "InfoProduto.categoria": 1,
+        "InfoProduto._id": 1,
+        "InfoProduto.model": 1,
+        "InfoProduto.brand": 1,
+        "InfoProduto.list_price": 1,
+      },
+  },
+  {
+    $addFields:
+      {
+        id: 1,
+        NIF: 123456789,
+        first_name: "ANDRE",
+        last_name: "ALMEIDA",
+        Ano_Fiscal: "05-2023",
+        address: "420 Pereira Silva",
+      },
+  },
+  {
+    $project:
+      {
+        invoice_id: 1,
+        date: 1,
+        customer_id: 1,
+        sales: 1,
+        "InfoCliente.first_name": 1,
+        "InfoCliente.last_name": 1,
+        "InfoCliente.email": 1,
+        "InfoCliente.posta_code": 1,
+        "InfoCliente.city": 1,
+        "InfoCliente.country": 1,
+        "InfoCliente.status": 1,
+        "InfoProduto.categoria": 1,
+        "InfoProduto._id": 1,
+        "InfoProduto.model": 1,
+        "InfoProduto.brand": 1,
+        "InfoProduto.list_price": 1,
+        InfoGeral: {
+          id: "$id",
+          NIF: "$NIF",
+          first_name: "$first_name",
+          last_name: "$last_name",
+          Ano_Fiscal: "$Ano_Fiscal",
+          address: "$address",
+        },
+      },
+  },
+]

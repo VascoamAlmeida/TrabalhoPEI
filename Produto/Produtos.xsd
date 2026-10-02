@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="product" type="productType" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:string"/>
+      <xs:element name="categoria" type="categoriasType"/>
+      <xs:element name="list_price" type="xs:decimal"/>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="model" type="xs:string"/>
+      <xs:element name="is_5g" type="xs:integer"/>
+      <xs:element name="processor_brand" type="xs:string"/>
+      <xs:element name="battery_capacity" type="xs:integer"/>
+      <xs:element name="fast_charging" type="xs:integer"/>
+      <xs:element name="ram_capacity" type="xs:integer"/>
+      <xs:element name="internal_memory" type="xs:integer"/>
+      <xs:element name="screen_size" type="xs:decimal"/>
+      <xs:element name="os" type="xs:string"/>
+      <xs:element name="primary_camera" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriasType">
+    <xs:sequence>
+      <xs:element name="categoria" type="categoriaType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriaType">
+    <xs:sequence>
+      <xs:element name="category" type="xs:string"/>
+      <xs:element name="sub_category" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,45 @@
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <products>
+        <product>
+            <_id>760</_id>
+            <categoria>
+                <categoria>
+                    <category>Price Range</category>
+                    <sub_category>Mid-Range Smartphones</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Performance</category>
+                    <sub_category>Basic Performance</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Camara Quality</category>
+                    <sub_category>Basic Camara</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Screen Size</category>
+                    <sub_category>Large</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Battery Life</category>
+                    <sub_category>Average Battery Life</sub_category>
+                </categoria>
+                <categoria>
+                    <category>Storage Capacity</category>
+                    <sub_category>Medium Storage</sub_category>
+                </categoria>
+            </categoria>
+            <list_price>27000</list_price>
+            <brand>vivo</brand>
+            <model>Vivo V20 Pro</model>
+            <is_5g>1</is_5g>
+            <processor_brand>snapdragon</processor_brand>
+            <battery_capacity>4000</battery_capacity>
+            <fast_charging>1</fast_charging>
+            <ram_capacity>8</ram_capacity>
+            <internal_memory>128</internal_memory>
+            <screen_size>6.44</screen_size>
+            <os>android</os>
+            <primary_camera>64</primary_camera>
+        </product>
+    </products>
+</Root>

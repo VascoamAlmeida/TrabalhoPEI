@@ -1,0 +1,207 @@
+[
+  {
+    "_id": 760,
+    "categoria": [
+      {
+        "category": "Price Range",
+        "sub_category": "Mid-Range Smartphones"
+      },
+      {
+        "category": "Performance",
+        "sub_category": "High-Performance"
+      },
+      {
+        "category": "Camera Quality",
+        "sub_category": "Pro-Level Cameras"
+      },
+      {
+        "category": "Screen Size",
+        "sub_category": "Large (6.5 inches and above)"
+      },
+      {
+        "category": "Battery Life",
+        "sub_category": "Average Battery Life"
+      },
+      {
+        "category": "Storage Capacity",
+        "sub_category": "High Storage"
+      }
+    ],
+    "list_price": 27000,
+    "brand": "vivo",
+    "model": "Vivo V20 Pro",
+    "is_5g": 1,
+    "processor_brand": "snapdragon",
+    "battery_capacity": 4000,
+    "fast_charging": 1,
+    "ram_capacity": 8,
+    "internal_memory": 128,
+    "screen_size": 6.44,
+    "os": "android",
+    "primary_camera": 64
+  },
+  {
+    "_id": 976,
+    "categoria": [
+      {
+        "category": "Price Range",
+        "sub_category": "Mid-Range Smartphones"
+      },
+      {
+        "category": "Performance",
+        "sub_category": "Basic Performance"
+      },
+      {
+        "category": "Camera Quality",
+        "sub_category": "Good Cameras"
+      },
+      {
+        "category": "Screen Size",
+        "sub_category": "Large (6.5 inches and above)"
+      },
+      {
+        "category": "Battery Life",
+        "sub_category": "Long Battery Life"
+      },
+      {
+        "category": "Storage Capacity",
+        "sub_category": "Medium Storage"
+      }
+    ],
+    "list_price": 13999,
+    "brand": "xiaomi",
+    "model": "Xiaomi Redmi Note 9 Pro",
+    "is_5g": 0,
+    "processor_brand": "snapdragon",
+    "battery_capacity": 5020,
+    "fast_charging": 1,
+    "ram_capacity": 4,
+    "internal_memory": 64,
+    "screen_size": 6.67,
+    "os": "android",
+    "primary_camera": 48
+  },
+  {
+    "_id": 357,
+    "categoria": [
+      {
+        "category": "Price Range",
+        "sub_category": "Mid-Range Smartphones"
+      },
+      {
+        "category": "Performance",
+        "sub_category": "High-Performance"
+      },
+      {
+        "category": "Camera Quality",
+        "sub_category": "Pro-Level Cameras"
+      },
+      {
+        "category": "Screen Size",
+        "sub_category": "Large (6.5 inches and above)"
+      },
+      {
+        "category": "Battery Life",
+        "sub_category": "Average Battery Life"
+      },
+      {
+        "category": "Storage Capacity",
+        "sub_category": "High Storage"
+      }
+    ],
+    "list_price": 30990,
+    "brand": "oppo",
+    "model": "Oppo A98",
+    "is_5g": 1,
+    "processor_brand": "snapdragon",
+    "battery_capacity": 5000,
+    "fast_charging": 1,
+    "ram_capacity": 8,
+    "internal_memory": 128,
+    "screen_size": 6.7,
+    "os": "android",
+    "primary_camera": 108
+  },
+  {
+    "_id": 76,
+    "categoria": [
+      {
+        "category": "Price Range",
+        "sub_category": "High-End Smartphones"
+      },
+      {
+        "category": "Performance",
+        "sub_category": "High-Performance"
+      },
+      {
+        "category": "Camera Quality",
+        "sub_category": "Good Cameras"
+      },
+      {
+        "category": "Screen Size",
+        "sub_category": "Large (6.5 inches and above)"
+      },
+      {
+        "category": "Battery Life",
+        "sub_category": "Average Battery Life"
+      },
+      {
+        "category": "Storage Capacity",
+        "sub_category": "High Storage"
+      }
+    ],
+    "list_price": 53990,
+    "brand": "google",
+    "model": "Google Pixel 8",
+    "is_5g": 1,
+    "processor_brand": "google",
+    "battery_capacity": 4830,
+    "fast_charging": 1,
+    "ram_capacity": 8,
+    "internal_memory": 128,
+    "screen_size": 6.6,
+    "os": "android",
+    "primary_camera": 50
+  },
+  {
+    "_id": 685,
+    "categoria": [
+      {
+        "category": "Price Range",
+        "sub_category": "High-End Smartphones"
+      },
+      {
+        "category": "Performance",
+        "sub_category": "High-Performance"
+      },
+      {
+        "category": "Camera Quality",
+        "sub_category": "Basic Cameras"
+      },
+      {
+        "category": "Screen Size",
+        "sub_category": "Large (6.5 inches and above)"
+      },
+      {
+        "category": "Battery Life",
+        "sub_category": "Average Battery Life"
+      },
+      {
+        "category": "Storage Capacity",
+        "sub_category": "High Storage"
+      }
+    ],
+    "list_price": 110999,
+    "brand": "samsung",
+    "model": "Samsung Galaxy Z Fold 3",
+    "is_5g": 1,
+    "processor_brand": "snapdragon",
+    "battery_capacity": 4400,
+    "fast_charging": 1,
+    "ram_capacity": 12,
+    "internal_memory": 256,
+    "screen_size": 7.6,
+    "os": "android",
+    "primary_camera": 12
+  }
+]

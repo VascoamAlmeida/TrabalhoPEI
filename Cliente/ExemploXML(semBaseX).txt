@@ -1,0 +1,23 @@
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customers>
+        <customer>
+            <_id>659d52bae54606396df898a2</_id>
+            <first_name>MARY</first_name>
+            <last_name>SMITH</last_name>
+            <email>MARY.SMITH@sakilacustomer.org</email>
+            <ative>1</ative>
+            <gender>M</gender>
+            <birthDate>1969-01-29T00:00:00.000Z</birthDate>
+            <customer_id>1</customer_id>
+            <create_date>2021-02-14T22:04:36.000Z</create_date>
+            <posta_code>35200</posta_code>
+            <city>Sasebo</city>
+            <country>Japan</country>
+            <total_per_customer>1525092.4022</total_per_customer>
+            <num_invoices>909</num_invoices>
+            <sum_items>4622</sum_items>
+            <since_creat_years>3</since_creat_years>
+            <status>regular</status>
+        </customer>
+    </customers>
+</Root>

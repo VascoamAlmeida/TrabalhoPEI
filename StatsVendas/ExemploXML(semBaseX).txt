@@ -1,0 +1,19 @@
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <data>
+        <record>
+            <_id>Object</_id>
+            <total_sale_month>10306926.7918</total_sale_month>
+            <total_product>22673</total_product>
+            <stats_product>
+                <product>
+                    <product_id>17</product_id>
+                    <total_month>23</total_month>
+                    <categoria>
+                        <category>Price Range</category>
+                        <sub_category>High-End Smartphones</sub_category>
+                    </categoria>
+                </product>
+            </stats_product>
+        </record>
+    </data>
+</Root>

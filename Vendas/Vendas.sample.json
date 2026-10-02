@@ -1,0 +1,443 @@
+[
+  {
+    "_id": {
+      "$oid": "659d534fe54606396df959ae"
+    },
+    "invoice_id": 1000019,
+    "date": {
+      "$date": "2022-02-04T00:00:00.000Z"
+    },
+    "customer_id": 325,
+    "sales": [
+      {
+        "id": 39230,
+        "total_with_vat": 1639.3,
+        "quantity": 1,
+        "product_id": 96
+      },
+      {
+        "id": 39231,
+        "total_with_vat": 1410.4818,
+        "quantity": 1,
+        "product_id": 686
+      },
+      {
+        "id": 39232,
+        "total_with_vat": 70.6899,
+        "quantity": 1,
+        "product_id": 188
+      },
+      {
+        "id": 39233,
+        "total_with_vat": 147.813,
+        "quantity": 1,
+        "product_id": 383
+      },
+      {
+        "id": 39234,
+        "total_with_vat": 74.8893,
+        "quantity": 2,
+        "product_id": 195
+      }
+    ],
+    "InfoCliente": [
+      {
+        "first_name": "TIMOTHY",
+        "last_name": "BUNN",
+        "email": "TIMOTHY.BUNN@sakilacustomer.org",
+        "posta_code": 49833,
+        "city": "Kingstown",
+        "country": "Saint Vincent and the Grenadines",
+        "status": "new"
+      }
+    ],
+    "InfoProduto": [
+      {
+        "_id": 96,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 169000,
+        "brand": "huawei",
+        "model": "Huawei Mate X"
+      },
+      {
+        "_id": 188,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Low Storage"
+          }
+        ],
+        "list_price": 6999,
+        "brand": "lava",
+        "model": "Lava X3"
+      },
+      {
+        "_id": 195,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Low Storage"
+          }
+        ],
+        "list_price": 6999,
+        "brand": "letv",
+        "model": "Letv Y2 Pro"
+      },
+      {
+        "_id": 383,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 16990,
+        "brand": "oppo",
+        "model": "Oppo K10x 5G"
+      },
+      {
+        "_id": 686,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 154998,
+        "brand": "samsung",
+        "model": "Samsung Galaxy Z Fold 4"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "05-2023",
+      "address": "Morada de exemplo"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "659d534fe54606396df959af"
+    },
+    "invoice_id": 1000021,
+    "date": {
+      "$date": "2022-05-27T00:00:00.000Z"
+    },
+    "customer_id": 213,
+    "sales": [
+      {
+        "id": 39237,
+        "total_with_vat": 293.902,
+        "quantity": 1,
+        "product_id": 410
+      },
+      {
+        "id": 39238,
+        "total_with_vat": 327.9918,
+        "quantity": 2,
+        "product_id": 664
+      },
+      {
+        "id": 39239,
+        "total_with_vat": 533.5884,
+        "quantity": 1,
+        "product_id": 403
+      }
+    ],
+    "InfoCliente": [
+      {
+        "first_name": "GINA",
+        "last_name": "WILLIAMSON",
+        "email": "GINA.WILLIAMSON@sakilacustomer.org",
+        "posta_code": 67924,
+        "city": "Taizz",
+        "country": "Yemen",
+        "status": "new"
+      }
+    ],
+    "InfoProduto": [
+      {
+        "_id": 403,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 45999,
+        "brand": "oppo",
+        "model": "OPPO Reno 9 Pro Plus"
+      },
+      {
+        "_id": 410,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Long Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 29990,
+        "brand": "oukitel",
+        "model": "Oukitel WP19"
+      },
+      {
+        "_id": 664,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 39999,
+        "brand": "samsung",
+        "model": "Samsung Galaxy S21 FE 5G"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "05-2023",
+      "address": "Morada de exemplo"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "659d534fe54606396df959b0"
+    },
+    "invoice_id": 100003,
+    "date": {
+      "$date": "2023-10-31T00:00:00.000Z"
+    },
+    "customer_id": 371,
+    "sales": [
+      {
+        "id": 249761,
+        "total_with_vat": 79.99,
+        "quantity": 1,
+        "product_id": 794
+      }
+    ],
+    "InfoCliente": [
+      {
+        "first_name": "BILLY",
+        "last_name": "POULIN",
+        "email": "BILLY.POULIN@sakilacustomer.org",
+        "posta_code": 72771,
+        "city": "Probolinggo",
+        "country": "Indonesia",
+        "status": "new"
+      }
+    ],
+    "InfoProduto": [
+      {
+        "_id": 794,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Low Storage"
+          }
+        ],
+        "list_price": 7999,
+        "brand": "vivo",
+        "model": "Vivo Y01"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "05-2023",
+      "address": "Morada de exemplo"
+    }
+  }
+]

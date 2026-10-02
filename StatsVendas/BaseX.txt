@@ -1,0 +1,62 @@
+module namespace page = 'http://basex.org/examples/web-page';
+
+(: API key is read from the environment; never commit credentials. :)
+declare variable $page:api-key := environment-variable('MONGODB_DATA_API_KEY');
+declare variable $page:data-api := environment-variable('MONGODB_DATA_API_URL');
+
+declare
+  %rest:GET
+  %rest:query-param("year", "{$year}")
+  %rest:query-param("month", "{$month}")
+  %rest:path('/StatsVendas')
+  %output:method('xml')
+function page:stats-vendas($year as xs:integer, $month as xs:integer) {
+  if ($month lt 1 or $month gt 12) then
+    <error>O parametro month deve estar entre 1 e 12.</error>
+  else if (empty($page:api-key)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_KEY nao esta definida.</error>
+  else if (empty($page:data-api)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_URL nao esta definida.</error>
+  else
+    let $json-data := '{
+      "dataSource": "Cluster0",
+      "database": "PEI_trabalhoPratico",
+      "collection": "product_statsFinal",
+      "filter": {"_id.month": ' || $month || ', "_id.year": ' || $year || '}
+    }'
+    let $response := http:send-request(
+      <http:request method='post'>
+        <http:header name='api-key' value='{$page:api-key}'/>
+        <http:body media-type='application/json'>{$json-data}</http:body>
+      </http:request>,
+      $page:data-api
+    )
+    return
+      <Root>
+        <data>{
+          for $document in $response[2]/documents/_
+          return
+            <record>
+              <_id>{concat(string($document/__id/year), '-', format-integer(xs:integer($document/__id/month), '00'))}</_id>
+              <total_sale_month>{string($document/total__sale__month)}</total_sale_month>
+              <total_product>{count($document/stats__product/_)}</total_product>
+              <stats_product>{
+                for $product in $document/stats__product/_
+                return
+                  <product>
+                    <product_id>{string($product/product)}</product_id>
+                    <total_month>{string($product/total__month)}</total_month>
+                    {
+                      for $category in $product/categoria/_
+                      return
+                        <categoria>
+                          <category>{string($category/category)}</category>
+                          <sub_category>{string($category/sub__category)}</sub_category>
+                        </categoria>
+                    }
+                  </product>
+              }</stats_product>
+            </record>
+        }</data>
+      </Root>
+};

@@ -1,0 +1,126 @@
+module namespace page = 'http://basex.org/examples/web-page';
+
+(: API key is read from the environment; never commit credentials. :)
+declare variable $page:api-key := environment-variable('MONGODB_DATA_API_KEY');
+declare variable $page:data-api := environment-variable('MONGODB_DATA_API_URL');
+
+declare function page:month-start($year as xs:integer, $month as xs:integer) as xs:dateTime {
+  xs:dateTime(
+    concat(
+      format-integer($year, '0000'), '-',
+      format-integer($month, '00'),
+      '-01T00:00:00Z'
+    )
+  )
+};
+
+declare function page:categories($categories as element()?) as element(categoria) {
+  <categoria>{
+    for $category in $categories/_
+    return
+      <categoria>
+        <category>{string($category/category)}</category>
+        <sub_category>{string($category/sub__category)}</sub_category>
+      </categoria>
+  }</categoria>
+};
+
+declare function page:product($product as element()) as element(InfoItensTodos) {
+  <InfoItensTodos>
+    <_id>{string($product/__id)}</_id>
+    {page:categories($product/categoria)}
+    <list_price>{string($product/list__price)}</list_price>
+    <brand>{string($product/brand)}</brand>
+    <model>{string($product/model)}</model>
+  </InfoItensTodos>
+};
+
+declare
+  %rest:GET
+  %rest:query-param("year", "{$year}")
+  %rest:query-param("month", "{$month}")
+  %rest:path('/Refund')
+  %output:method('xml')
+function page:refund($year as xs:integer, $month as xs:integer) {
+  if ($month lt 1 or $month gt 12) then
+    <error>O parametro month deve estar entre 1 e 12.</error>
+  else if (empty($page:api-key)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_KEY nao esta definida.</error>
+  else if (empty($page:data-api)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_URL nao esta definida.</error>
+  else
+    let $start := page:month-start($year, $month)
+    let $end := $start + xs:yearMonthDuration('P1M')
+    let $json-data := '{
+      "dataSource": "Cluster0",
+      "database": "PEI_trabalhoPratico",
+      "collection": "Devolucoes",
+      "filter": {"date_return": {
+        "$gte": {"$date": "' || string($start) || '"},
+        "$lt": {"$date": "' || string($end) || '"}
+      }}
+    }'
+    let $response := http:send-request(
+      <http:request method='post'>
+        <http:header name='api-key' value='{$page:api-key}'/>
+        <http:body media-type='application/json'>{$json-data}</http:body>
+      </http:request>,
+      $page:data-api
+    )
+    let $documents := $response[2]/documents/_
+    let $product-ids := distinct-values(
+      for $document in $documents
+      return string($document/product__id)
+    )
+    let $products :=
+      for $product-id in $product-ids
+      let $product := (
+        $documents/InfoItensTodos/_ [string(__id) = $product-id]
+      )[1]
+      where exists($product)
+      return $product
+    return
+      <Root>
+        <devolucoes>{
+          for $document in $documents
+          return
+            <devolucao>
+              <_id>{string($document/__id)}</_id>
+              <invoice_id>{string($document/invoice__id)}</invoice_id>
+              <date_sale>{string($document/date__sale)}</date_sale>
+              <date_return>{string($document/date__return)}</date_return>
+              <product_id>{string($document/product__id)}</product_id>
+              <customer_id>{string($document/customer__id)}</customer_id>
+              <num_dia_return>{string($document/num__dia__return)}</num_dia_return>
+              <return>{if (xs:integer($document/num__dia__return) le 3) then 'early' else 'regular'}</return>
+            </devolucao>
+        }</devolucoes>
+        <InfoItensTodos>{
+          for $product in $products
+          return page:product($product)
+        }</InfoItensTodos>
+        <categoria>{
+          for $product in $products
+          for $category in $product/categoria/_
+          return
+            <categoria>
+              <category>{string($category/category)}</category>
+              <sub_category>{string($category/sub__category)}</sub_category>
+            </categoria>
+        }</categoria>
+        {
+          let $general := ($documents/InfoGeral)[1]
+          return
+            if (exists($general)) then
+              <InfoGeral>
+                <id>{string($general/id)}</id>
+                <NIF>{string($general/NIF)}</NIF>
+                <first_name>{string($general/first__name)}</first_name>
+                <last_name>{string($general/last__name)}</last_name>
+                <Ano_Fiscal>{string($general/Ano__Fiscal)}</Ano_Fiscal>
+                <address>{string($general/address)}</address>
+              </InfoGeral>
+            else ()
+        }
+      </Root>
+};

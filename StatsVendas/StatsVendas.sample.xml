@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Root>
+  <data>
+    <record>
+      <_id>2022-09</_id>
+      <total_sale_month>10306926.7918</total_sale_month>
+      <total_product>5</total_product>
+      <stats_product>
+        <product>
+          <product_id>17</product_id>
+          <total_month>23</total_month>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>High-End Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>Standard Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Basic Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Medium (5-6.4 inches)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </product>
+        <product>
+          <product_id>800</product_id>
+          <total_month>21</total_month>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Good Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Medium (5-6.4 inches)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </product>
+        <product>
+          <product_id>848</product_id>
+          <total_month>30</total_month>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Pro-Level Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </product>
+        <product>
+          <product_id>540</product_id>
+          <total_month>17</total_month>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Budget Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>Basic Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Basic Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>Medium Storage</sub_category>
+          </categoria>
+        </product>
+        <product>
+          <product_id>406</product_id>
+          <total_month>25</total_month>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Good Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </product>
+        </stats_product>
+    </record>
+    </data>
+</Root>

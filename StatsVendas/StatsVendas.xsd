@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="record" type="recordType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="recordType">
+    <xs:sequence>
+      <xs:element name="_id" type="xs:string"/>
+      <xs:element name="total_sale_month" type="xs:decimal"/>
+      <xs:element name="total_product" type="xs:integer"/>
+      <xs:element name="stats_product" type="statsProductType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="statsProductType">
+    <xs:sequence>
+      <xs:element name="product" type="productStatsType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productStatsType">
+    <xs:sequence>
+      <xs:element name="product_id" type="xs:integer"/>
+      <xs:element name="total_month" type="xs:integer"/>
+      <xs:element name="categoria" type="categoriaType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoriaType">
+    <xs:sequence>
+      <xs:element name="category" type="xs:string"/>
+      <xs:element name="sub_category" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

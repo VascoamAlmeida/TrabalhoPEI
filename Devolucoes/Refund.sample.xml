@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Root>
+  <devolucoes>
+    <devolucao>
+      <_id>65a8f71099be844722feede6</_id>
+      <invoice_id>6889534</invoice_id>
+      <date_sale>2022-01-11T00:00:00Z</date_sale>
+      <date_return>2022-01-20T00:00:00Z</date_return>
+      <product_id>686</product_id>
+      <customer_id>251</customer_id>
+      <num_dia_return>9</num_dia_return>
+      <return>regular</return>
+    </devolucao>
+    <devolucao>
+      <_id>65a8f71099be844722feede7</_id>
+      <invoice_id>3498369</invoice_id>
+      <date_sale>2023-03-15T00:00:00Z</date_sale>
+      <date_return>2023-03-26T00:00:00Z</date_return>
+      <product_id>638</product_id>
+      <customer_id>249</customer_id>
+      <num_dia_return>11</num_dia_return>
+      <return>regular</return>
+    </devolucao>
+    <devolucao>
+      <_id>65a8f71099be844722feede8</_id>
+      <invoice_id>5626541</invoice_id>
+      <date_sale>2022-12-17T00:00:00Z</date_sale>
+      <date_return>2022-12-19T00:00:00Z</date_return>
+      <product_id>693</product_id>
+      <customer_id>363</customer_id>
+      <num_dia_return>2</num_dia_return>
+      <return>early</return>
+    </devolucao>
+    <devolucao>
+      <_id>65a8f71099be844722feede9</_id>
+      <invoice_id>709892</invoice_id>
+      <date_sale>2022-04-12T00:00:00Z</date_sale>
+      <date_return>2022-04-21T00:00:00Z</date_return>
+      <product_id>903</product_id>
+      <customer_id>281</customer_id>
+      <num_dia_return>9</num_dia_return>
+      <return>regular</return>
+    </devolucao>
+    <devolucao>
+      <_id>65a8f71099be844722feedea</_id>
+      <invoice_id>985557</invoice_id>
+      <date_sale>2023-11-08T00:00:00Z</date_sale>
+      <date_return>2023-11-10T00:00:00Z</date_return>
+      <product_id>372</product_id>
+      <customer_id>64</customer_id>
+      <num_dia_return>2</num_dia_return>
+      <return>early</return>
+    </devolucao>
+    </devolucoes>
+  <InfoItensTodos>
+    <InfoItensTodos>
+      <_id>686</_id>
+      <categoria>
+        <categoria>
+          <category>Price Range</category>
+          <sub_category>High-End Smartphones</sub_category>
+        </categoria>
+        <categoria>
+          <category>Performance</category>
+          <sub_category>High-Performance</sub_category>
+        </categoria>
+        <categoria>
+          <category>Camera Quality</category>
+          <sub_category>Good Cameras</sub_category>
+        </categoria>
+        <categoria>
+          <category>Screen Size</category>
+          <sub_category>Large (6.5 inches and above)</sub_category>
+        </categoria>
+        <categoria>
+          <category>Battery Life</category>
+          <sub_category>Average Battery Life</sub_category>
+        </categoria>
+        <categoria>
+          <category>Storage Capacity</category>
+          <sub_category>High Storage</sub_category>
+        </categoria>
+      </categoria>
+      <list_price>154998</list_price>
+      <brand>samsung</brand>
+      <model>Samsung Galaxy Z Fold 4</model>
+    </InfoItensTodos>
+    <InfoItensTodos>
+      <_id>638</_id>
+      <categoria>
+        <categoria>
+          <category>Price Range</category>
+          <sub_category>Mid-Range Smartphones</sub_category>
+        </categoria>
+        <categoria>
+          <category>Performance</category>
+          <sub_category>Standard Performance</sub_category>
+        </categoria>
+        <categoria>
+          <category>Camera Quality</category>
+          <sub_category>Pro-Level Cameras</sub_category>
+        </categoria>
+        <categoria>
+          <category>Screen Size</category>
+          <sub_category>Medium (5-6.4 inches)</sub_category>
+        </categoria>
+        <categoria>
+          <category>Battery Life</category>
+          <sub_category>Long Battery Life</sub_category>
+        </categoria>
+        <categoria>
+          <category>Storage Capacity</category>
+          <sub_category>High Storage</sub_category>
+        </categoria>
+      </categoria>
+      <list_price>14859</list_price>
+      <brand>samsung</brand>
+      <model>Samsung Galaxy M32 Prime Edition (6GB RAM + 128GB)</model>
+    </InfoItensTodos>
+    <InfoItensTodos>
+      <_id>693</_id>
+      <categoria>
+        <categoria>
+          <category>Price Range</category>
+          <sub_category>High-End Smartphones</sub_category>
+        </categoria>
+        <categoria>
+          <category>Performance</category>
+          <sub_category>High-Performance</sub_category>
+        </categoria>
+        <categoria>
+          <category>Camera Quality</category>
+          <sub_category>Basic Cameras</sub_category>
+        </categoria>
+        <categoria>
+          <category>Screen Size</category>
+          <sub_category>Medium (5-6.4 inches)</sub_category>
+        </categoria>
+        <categoria>
+          <category>Battery Life</category>
+          <sub_category>Average Battery Life</sub_category>
+        </categoria>
+        <categoria>
+          <category>Storage Capacity</category>
+          <sub_category>High Storage</sub_category>
+        </categoria>
+      </categoria>
+      <list_price>69990</list_price>
+      <brand>sony</brand>
+      <model>Sony Xperia 5 II</model>
+    </InfoItensTodos>
+    </InfoItensTodos>
+  <categoria>
+    <categoria>
+      <category>Price Range</category>
+      <sub_category>High-End Smartphones</sub_category>
+    </categoria>
+    <categoria>
+      <category>Performance</category>
+      <sub_category>High-Performance</sub_category>
+    </categoria>
+    <categoria>
+      <category>Camera Quality</category>
+      <sub_category>Good Cameras</sub_category>
+    </categoria>
+    <categoria>
+      <category>Screen Size</category>
+      <sub_category>Large (6.5 inches and above)</sub_category>
+    </categoria>
+    <categoria>
+      <category>Battery Life</category>
+      <sub_category>Average Battery Life</sub_category>
+    </categoria>
+    <categoria>
+      <category>Storage Capacity</category>
+      <sub_category>High Storage</sub_category>
+    </categoria>
+    <categoria>
+      <category>Price Range</category>
+      <sub_category>Mid-Range Smartphones</sub_category>
+    </categoria>
+    <categoria>
+      <category>Performance</category>
+      <sub_category>Standard Performance</sub_category>
+    </categoria>
+    </categoria>
+  <InfoGeral>
+    <id>1</id>
+    <NIF>123456789</NIF>
+    <first_name>PARCEIRO</first_name>
+    <last_name>EXEMPLO</last_name>
+    <Ano_Fiscal>2020</Ano_Fiscal>
+    <address>Morada de exemplo</address>
+  </InfoGeral>
+</Root>

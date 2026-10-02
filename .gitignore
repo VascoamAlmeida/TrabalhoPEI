@@ -1,0 +1,30 @@
+# Secrets / local configuration
+.env
+*.env
+
+# Full generated/exported datasets (portfolio keeps *.sample.* only)
+**/Vendas.json
+**/Devolucoes.json
+**/StatsVendas.json
+**/StatsRefund.json
+**/VendasPorMes.xml
+**/Refund.xml
+**/StatsVendas.xml
+**/StatsRefund.xml
+**/StatsCliente3anos.xml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Temporary files
+*.tmp
+*.log
+
+# Additional full exports replaced by samples
+**/Cliente.json
+**/ProdutoFinal.json
+**/Stats3anosCliente.json

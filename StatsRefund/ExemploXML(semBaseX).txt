@@ -1,0 +1,27 @@
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <data>
+        <record>
+            <_id>392</_id>
+            <month>5</month>
+            <year>2022</year>
+            <sum_item_monthly>3494</sum_item_monthly>
+            <monthly_refund>
+                <product>
+                    <product_id>813</product_id>
+                    <sum_item_monthly>6</sum_item_monthly>
+                    <brand>vivo</brand>
+                    <model>Vivo Y20G</model>
+                    <list_price>13990</list_price>
+                    <categoria>
+                        <category>Price Range</category>
+                        <sub_category>Mid-Range Smartphones</sub_category>
+                    </categoria>
+                    <invoice>
+                        <invoice_id>1366606</invoice_id>
+                        <return_date>2022-05-05T00:00:00.000Z</return_date>
+                    </invoice>
+                </product>
+            </monthly_refund>
+        </record>
+    </data>
+</Root>

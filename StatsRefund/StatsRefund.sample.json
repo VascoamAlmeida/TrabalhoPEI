@@ -1,0 +1,466 @@
+[
+  {
+    "_id": {
+      "month": 5,
+      "year": 2022
+    },
+    "sum_item_monthly": 3494,
+    "monthly_refund": [
+      {
+        "product_id": 813,
+        "sum_item_monthly": 6,
+        "brand": "vivo",
+        "model": "Vivo Y20G",
+        "list_price": 13990,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Medium Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 1366606,
+            "return_date": {
+              "$date": "2022-05-05T00:00:00.000Z"
+            }
+          },
+          {
+            "invoice_id": 1750807,
+            "return_date": {
+              "$date": "2022-05-22T00:00:00.000Z"
+            }
+          },
+          {
+            "invoice_id": 3668822,
+            "return_date": {
+              "$date": "2022-05-30T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 308,
+        "sum_item_monthly": 2,
+        "brand": "oneplus",
+        "model": "OnePlus Nord 5",
+        "list_price": 34999,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 2149448,
+            "return_date": {
+              "$date": "2022-05-25T00:00:00.000Z"
+            }
+          },
+          {
+            "invoice_id": 693991,
+            "return_date": {
+              "$date": "2022-05-13T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 943,
+        "sum_item_monthly": 2,
+        "brand": "xiaomi",
+        "model": "Xiaomi Redmi Note 11 Pro Plus 5G (8GB RAM + 128GB)",
+        "list_price": 22700,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 2286467,
+            "return_date": {
+              "$date": "2022-05-07T00:00:00.000Z"
+            }
+          },
+          {
+            "invoice_id": 933516,
+            "return_date": {
+              "$date": "2022-05-21T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 430,
+        "sum_item_monthly": 2,
+        "brand": "poco",
+        "model": "POCO M3 Pro 5G (6GB RAM + 128GB)",
+        "list_price": 14799,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 1158562,
+            "return_date": {
+              "$date": "2022-05-16T00:00:00.000Z"
+            }
+          },
+          {
+            "invoice_id": 6831411,
+            "return_date": {
+              "$date": "2022-05-15T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 739,
+        "sum_item_monthly": 1,
+        "brand": "vivo",
+        "model": "Vivo T1 44W (6GB RAM + 128GB)",
+        "list_price": 15999,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 4443077,
+            "return_date": {
+              "$date": "2022-05-09T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "month": 11,
+      "year": 2023
+    },
+    "sum_item_monthly": 525,
+    "monthly_refund": [
+      {
+        "product_id": 130,
+        "sum_item_monthly": 1,
+        "brand": "infinix",
+        "model": "Infinix Note 12i (2022)",
+        "list_price": 9999,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Medium Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 1118904,
+            "return_date": {
+              "$date": "2023-11-30T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 529,
+        "sum_item_monthly": 1,
+        "brand": "realme",
+        "model": "Realme Narzo 50",
+        "list_price": 10999,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Medium Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 2317618,
+            "return_date": {
+              "$date": "2023-11-18T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 578,
+        "sum_item_monthly": 2,
+        "brand": "samsung",
+        "model": "Samsung Galaxy A14 5G (8GB RAM + 128GB)",
+        "list_price": 20999,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 42594,
+            "return_date": {
+              "$date": "2023-11-03T00:00:00.000Z"
+            }
+          },
+          {
+            "invoice_id": 544027,
+            "return_date": {
+              "$date": "2023-11-14T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 299,
+        "sum_item_monthly": 1,
+        "brand": "oneplus",
+        "model": "OnePlus Ace Pro",
+        "list_price": 47990,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 1996417,
+            "return_date": {
+              "$date": "2023-11-07T00:00:00.000Z"
+            }
+          }
+        ]
+      },
+      {
+        "product_id": 563,
+        "sum_item_monthly": 1,
+        "brand": "samsung",
+        "model": "Samsung Galaxy A04e",
+        "list_price": 9299,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Budget Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Low Storage"
+          }
+        ],
+        "invoice": [
+          {
+            "invoice_id": 1462019,
+            "return_date": {
+              "$date": "2023-11-10T00:00:00.000Z"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+CRIAÇÃO DA COLEÇÃO: customer_final
+
+[
+  {
+    $lookup:
+      {
+        from: "address",
+        localField: "address_id",
+        foreignField: "address_id",
+        as: "address",
+      },
+  },
+  {
+    $unwind:
+      {
+        path: "$address",
+      },
+  },
+  {
+    $lookup:
+      {
+        from: "city",
+        localField: "address.city_id",
+        foreignField: "city_id",
+        as: "city",
+      },
+  },
+  {
+    $unwind:
+
+      {
+        path: "$city",
+      },
+  },
+  {
+    $lookup:
+      {
+        from: "country",
+        localField: "city.country_id",
+        foreignField: "country_id",
+        as: "country",
+      },
+  },
+  {
+    $unwind:
+      {
+        path: "$country",
+      },
+  },
+  {
+    $lookup:
+      {
+        from: "total_per_customer",
+        localField: "id",
+        foreignField: "_id",
+        as: "result",
+      },
+  },
+  {
+    $unwind:
+      {
+        path: "$result",
+      },
+  },
+  {
+    $project:
+      {
+        _id: 1,
+        customer_id: "$id",
+        first_name: 1,
+        last_name: 1,
+        email: 1,
+        ative: 1,
+        create_date: {
+          $toDate: "$create_date",
+        },
+        gender: 1,
+        birthDate: 1,
+        posta_code: "$address.postal_code",
+        city: "$city.city",
+        country: "$country.country",
+        total_per_customer:
+          "$result.total_per_customer",
+        num_invoices: "$result.num_invoices",
+        sum_items: "$result.sum_items",
+      },
+  },
+  {
+    $addFields: {
+      since_creat_years: {
+        $dateDiff: {
+          startDate: "$create_date",
+          endDate: new Date(),
+          unit: "year"
+        }
+      }
+    }
+  },
+  {
+    $addFields: {
+      status: {
+        $cond: {
+          if: { $lt: ["$since_creat_years", 1] },
+          then: "new",
+          else: {
+            $cond: {
+              if: { $gt: ["$since_creat_years", 5] },
+              then: "premium",
+              else: "regular"
+            }
+          }
+        }
+      }
+    }
+  }
+]

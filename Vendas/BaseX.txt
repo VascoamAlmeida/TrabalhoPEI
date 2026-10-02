@@ -1,0 +1,122 @@
+module namespace page = 'http://basex.org/examples/web-page';
+
+(: API key is read from the environment; never commit credentials. :)
+declare variable $page:api-key := environment-variable('MONGODB_DATA_API_KEY');
+declare variable $page:data-api := environment-variable('MONGODB_DATA_API_URL');
+
+declare function page:month-start($year as xs:integer, $month as xs:integer) as xs:dateTime {
+  xs:dateTime(
+    concat(
+      format-integer($year, '0000'), '-',
+      format-integer($month, '00'),
+      '-01T00:00:00Z'
+    )
+  )
+};
+
+declare function page:categories($categories as element()?) as element(categoria) {
+  <categoria>{
+    for $category in $categories/_
+    return
+      <categoria>
+        <category>{string($category/category)}</category>
+        <sub_category>{string($category/sub__category)}</sub_category>
+      </categoria>
+  }</categoria>
+};
+
+declare function page:sale-document($document as element()) as element(data) {
+  let $customer := ($document/InfoCliente/_)[1]
+  return
+    <data>
+      <_id>{string($document/__id)}</_id>
+      <invoice_id>{string($document/invoice__id)}</invoice_id>
+      <date>{string($document/date)}</date>
+      <customer_id>{string($document/customer__id)}</customer_id>
+      <sales>{
+        for $sale in $document/sales/_
+        return
+          <sale>
+            <id>{string($sale/id)}</id>
+            <total_with_vat>{string($sale/total__with__vat)}</total_with_vat>
+            <quantity>{string($sale/quantity)}</quantity>
+            <product_id>{string($sale/product__id)}</product_id>
+          </sale>
+      }</sales>
+      <InfoCliente>{
+        if (exists($customer)) then
+          <cliente>
+            <first_name>{string($customer/first__name)}</first_name>
+            <last_name>{string($customer/last__name)}</last_name>
+            <email>{
+              let $email := normalize-space(string($customer/email))
+              return if ($email = '') then 'desconhecido' else $email
+            }</email>
+            <posta_code>{string($customer/posta__code)}</posta_code>
+            <city>{string($customer/city)}</city>
+            <country>{string($customer/country)}</country>
+            <status>{string($customer/status)}</status>
+          </cliente>
+        else ()
+      }</InfoCliente>
+      <InfoProduto>{
+        for $product in $document/InfoProduto/_
+        return
+          <produto>
+            <_id>{string($product/__id)}</_id>
+            {page:categories($product/categoria)}
+            <list_price>{string($product/list__price)}</list_price>
+            <brand>{string($product/brand)}</brand>
+            <model>{string($product/model)}</model>
+          </produto>
+      }</InfoProduto>
+      <InfoGeral>
+        <id>{string($document/InfoGeral/id)}</id>
+        <NIF>{string($document/InfoGeral/NIF)}</NIF>
+        <first_name>{string($document/InfoGeral/first__name)}</first_name>
+        <last_name>{string($document/InfoGeral/last__name)}</last_name>
+        <Ano_Fiscal>{string($document/InfoGeral/Ano__Fiscal)}</Ano_Fiscal>
+        <address>{string($document/InfoGeral/address)}</address>
+      </InfoGeral>
+    </data>
+};
+
+declare
+  %rest:GET
+  %rest:query-param("year", "{$year}")
+  %rest:query-param("month", "{$month}")
+  %rest:path('/Vendas')
+  %output:method('xml')
+function page:vendas($year as xs:integer, $month as xs:integer) {
+  if ($month lt 1 or $month gt 12) then
+    <error>O parametro month deve estar entre 1 e 12.</error>
+  else if (empty($page:api-key)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_KEY nao esta definida.</error>
+  else if (empty($page:data-api)) then
+    <error>A variavel de ambiente MONGODB_DATA_API_URL nao esta definida.</error>
+  else
+    let $start := page:month-start($year, $month)
+    let $end := $start + xs:yearMonthDuration('P1M')
+    let $json-data := '{
+      "dataSource": "Cluster0",
+      "database": "PEI_trabalhoPratico",
+      "collection": "Vendas",
+      "filter": {"date": {
+        "$gte": {"$date": "' || string($start) || '"},
+        "$lt": {"$date": "' || string($end) || '"}
+      }}
+    }'
+    let $response := http:send-request(
+      <http:request method='post'>
+        <http:header name='api-key' value='{$page:api-key}'/>
+        <http:body media-type='application/json'>{$json-data}</http:body>
+      </http:request>,
+      $page:data-api
+    )
+    let $documents := $response[2]/documents/_
+    return
+      <Root>{
+        for $document in $documents
+        return page:sale-document($document)
+      }</Root>
+};

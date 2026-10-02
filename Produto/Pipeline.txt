@@ -1,0 +1,100 @@
+CRIA A COLEÇAO PRODUTO FINAL:
+
+[ 
+{
+    $lookup:
+      {
+        from: "category",
+        localField: "category_id",
+        foreignField: "id",
+        as: "result",
+      },
+  },
+  {
+    $unwind:
+
+      {
+        path: "$result",
+      },
+  },
+  {
+    $project:
+      {
+        category: "$result.name",
+        sub_category: "$name",
+        id: 1,
+      },
+  },
+  {
+    $lookup:
+      {
+        from: "sub_category_product",
+        localField: "id",
+        foreignField: "sub_category_id",
+        as: "result",
+      },
+  },
+  {
+    $unwind:
+      {
+        path: "$result",
+      },
+  },
+  {
+    $project:
+      {
+        category: 1,
+        sub_category: 1,
+        product_id: "$result.product_id",
+      },
+  },
+  {
+    $group:
+      {
+        _id: "$product_id",
+        categoria: {
+          $push: {
+            category: "$category",
+            sub_category: "$sub_category",
+          },
+        },
+      },
+  },
+  {
+    $lookup:
+      {
+        from: "product",
+        localField: "_id",
+        foreignField: "id",
+        as: "result",
+      },
+  },
+  {
+    $unwind:
+      {
+        path: "$result",
+      },
+  },
+  {
+    $project:
+      {
+        _id: 1,
+        categoria: 1,
+        list_price: "$result.list_price",
+        brand: "$result.brand",
+        model: "$result.model",
+        is_5g: "$result.5g",
+        processor_brand:
+          "$result.processor_brand",
+        battery_capacity:
+          "$result.battery_capacity",
+        fast_charging: "$result.fast_charging",
+        ram_capacity: "$result.ram_capacity",
+        internal_memory:
+          "$result.internal_memory",
+        screen_size: "$result.screen_size",
+        os: "$result.os",
+        primary_camera: "$result.primary_camera",
+      },
+  },
+]

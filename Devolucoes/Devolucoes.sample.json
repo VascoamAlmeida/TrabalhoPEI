@@ -1,0 +1,388 @@
+[
+  {
+    "_id": {
+      "$oid": "65a8f71099be844722feede6"
+    },
+    "invoice_id": 6889534,
+    "date_sale": {
+      "$date": "2022-01-11T00:00:00.000Z"
+    },
+    "date_return": {
+      "$date": "2022-01-20T00:00:00.000Z"
+    },
+    "product_id": 686,
+    "customer_id": 251,
+    "num_dia_return": 9,
+    "return": "regular",
+    "InfoItensTodos": [
+      {
+        "_id": 686,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 154998,
+        "brand": "samsung",
+        "model": "Samsung Galaxy Z Fold 4"
+      },
+      {
+        "_id": 811,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Basic Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "Medium Storage"
+          }
+        ],
+        "list_price": 12489,
+        "brand": "vivo",
+        "model": "Vivo Y16 (4GB RAM + 64GB)"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "2020",
+      "address": "Morada de exemplo"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a8f71099be844722feede7"
+    },
+    "invoice_id": 3498369,
+    "date_sale": {
+      "$date": "2023-03-15T00:00:00.000Z"
+    },
+    "date_return": {
+      "$date": "2023-03-26T00:00:00.000Z"
+    },
+    "product_id": 638,
+    "customer_id": 249,
+    "num_dia_return": 11,
+    "return": "regular",
+    "InfoItensTodos": [
+      {
+        "_id": 638,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Long Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 14859,
+        "brand": "samsung",
+        "model": "Samsung Galaxy M32 Prime Edition (6GB RAM + 128GB)"
+      },
+      {
+        "_id": 422,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Pro-Level Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 39999,
+        "brand": "poco",
+        "model": "POCO F4 GT 5G"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "2020",
+      "address": "Morada de exemplo"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a8f71099be844722feede8"
+    },
+    "invoice_id": 5626541,
+    "date_sale": {
+      "$date": "2022-12-17T00:00:00.000Z"
+    },
+    "date_return": {
+      "$date": "2022-12-19T00:00:00.000Z"
+    },
+    "product_id": 693,
+    "customer_id": 363,
+    "num_dia_return": 2,
+    "return": "regular",
+    "InfoItensTodos": [
+      {
+        "_id": 693,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Medium (5-6.4 inches)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 69990,
+        "brand": "sony",
+        "model": "Sony Xperia 5 II"
+      },
+      {
+        "_id": 925,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Long Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 11999,
+        "brand": "xiaomi",
+        "model": "Xiaomi Redmi Note 10 Lite (6GB RAM + 128GB)"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "2020",
+      "address": "Morada de exemplo"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a8f71099be844722feede9"
+    },
+    "invoice_id": 709892,
+    "date_sale": {
+      "$date": "2022-04-12T00:00:00.000Z"
+    },
+    "date_return": {
+      "$date": "2022-04-21T00:00:00.000Z"
+    },
+    "product_id": 903,
+    "customer_id": 281,
+    "num_dia_return": 9,
+    "return": "regular",
+    "InfoItensTodos": [
+      {
+        "_id": 903,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "Mid-Range Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "Standard Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Basic Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 10990,
+        "brand": "xiaomi",
+        "model": "Xiaomi Redmi 9A (6GB RAM + 128GB)"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "2020",
+      "address": "Morada de exemplo"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65a8f71099be844722feedea"
+    },
+    "invoice_id": 985557,
+    "date_sale": {
+      "$date": "2023-11-08T00:00:00.000Z"
+    },
+    "date_return": {
+      "$date": "2023-11-10T00:00:00.000Z"
+    },
+    "product_id": 372,
+    "customer_id": 64,
+    "num_dia_return": 2,
+    "return": "regular",
+    "InfoItensTodos": [
+      {
+        "_id": 372,
+        "categoria": [
+          {
+            "category": "Price Range",
+            "sub_category": "High-End Smartphones"
+          },
+          {
+            "category": "Performance",
+            "sub_category": "High-Performance"
+          },
+          {
+            "category": "Camera Quality",
+            "sub_category": "Good Cameras"
+          },
+          {
+            "category": "Screen Size",
+            "sub_category": "Large (6.5 inches and above)"
+          },
+          {
+            "category": "Battery Life",
+            "sub_category": "Average Battery Life"
+          },
+          {
+            "category": "Storage Capacity",
+            "sub_category": "High Storage"
+          }
+        ],
+        "list_price": 99990,
+        "brand": "oppo",
+        "model": "Oppo Find N Fold"
+      }
+    ],
+    "InfoGeral": {
+      "id": 1,
+      "NIF": "123456789",
+      "first_name": "PARCEIRO",
+      "last_name": "EXEMPLO",
+      "Ano_Fiscal": "2020",
+      "address": "Morada de exemplo"
+    }
+  }
+]

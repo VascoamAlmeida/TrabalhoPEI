@@ -1,0 +1,85 @@
+CRIAÇÃO DA COLEÇÃO: Refund_stats
+
+[
+  {
+    $lookup:
+      {
+        from: "product_final",
+        localField: "product_id",
+        foreignField: "_id",
+        as: "result",
+      },
+  },
+  {
+    $unwind:
+      {
+        path: "$result",
+      },
+  },
+  {
+    $group:
+      {
+        _id: {
+          month: {
+            $month: "$date",
+          },
+          year: {
+            $year: "$date",
+          },
+          product_id: "$product_id",
+        },
+        sum_item: {
+          $sum: 1,
+        },
+        brand: {
+          $first: "$result.brand",
+        },
+        model: {
+          $first: "$result.model",
+        },
+        list_price: {
+          $first: "$result.list_price",
+        },
+        categoria: {
+          $first: "$result.categoria",
+        },
+        invoice_id: {
+          $push: {
+            invoice_id: "$invoice_id",
+            return_date: "$date",
+            //brand: "$result.brand",
+            //model: "$result.model",
+            //list_price: "$result.list_price",
+            //categoria: "$result.categoria",
+          },
+        },
+      },
+  },
+  {
+    $group:
+      {
+        _id: {
+          month: "$_id.month",
+          year: "$_id.year",
+        },
+        sum_item_monthly: {
+          $sum: "$sum_item",
+        },
+        monthly_refund: {
+          $push: {
+            product_id: "$_id.product_id",
+            sum_item_monthly: "$sum_item",
+            brand: "$brand",
+            model: "$model",
+            list_price: "$list_price",
+            categoria: "$categoria",
+            invoice: "$invoice_id",
+          },
+        },
+      },
+  },
+  {
+    $out:
+      "refund_stats",
+  },
+]

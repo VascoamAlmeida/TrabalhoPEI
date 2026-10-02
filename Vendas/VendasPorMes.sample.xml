@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Root>
+  <data>
+    <_id>659d534fe54606396df959b6</_id>
+    <invoice_id>100036</invoice_id>
+    <date>2023-10-04T00:00:00Z</date>
+    <customer_id>357</customer_id>
+    <sales>
+      <sale>
+        <id>249741</id>
+        <total_with_vat>328.9906</total_with_vat>
+        <quantity>1</quantity>
+        <product_id>279</product_id>
+      </sale>
+      <sale>
+        <id>249742</id>
+        <total_with_vat>355.1904</total_with_vat>
+        <quantity>1</quantity>
+        <product_id>137</product_id>
+      </sale>
+    </sales>
+    <InfoCliente>
+      <cliente>
+        <first_name>KEITH</first_name>
+        <last_name>RICO</last_name>
+        <email>KEITH.RICO@sakilacustomer.org</email>
+        <posta_code>5373</posta_code>
+        <city>Ranchi</city>
+        <country>India</country>
+        <status>new</status>
+      </cliente>
+    </InfoCliente>
+    <InfoProduto>
+      <produto>
+        <_id>137</_id>
+        <categoria>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Pro-Level Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </categoria>
+        <list_price>36999</list_price>
+        <brand>infinix</brand>
+        <model>Infinix Zero Ultra</model>
+      </produto>
+      <produto>
+        <_id>279</_id>
+        <categoria>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Pro-Level Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </categoria>
+        <list_price>34999</list_price>
+        <brand>nubia</brand>
+        <model>Nubia Z50</model>
+      </produto>
+    </InfoProduto>
+    <InfoGeral>
+      <id>1</id>
+      <NIF>123456789</NIF>
+      <first_name>PARCEIRO</first_name>
+      <last_name>EXEMPLO</last_name>
+      <Ano_Fiscal>05-2023</Ano_Fiscal>
+      <address>Morada de exemplo</address>
+    </InfoGeral>
+  </data>
+  <data>
+    <_id>659d534fe54606396df95b86</_id>
+    <invoice_id>1009031</invoice_id>
+    <date>2023-10-02T00:00:00Z</date>
+    <customer_id>133</customer_id>
+    <sales>
+      <sale>
+        <id>508337</id>
+        <total_with_vat>107.5</total_with_vat>
+        <quantity>1</quantity>
+        <product_id>805</product_id>
+      </sale>
+    </sales>
+    <InfoCliente>
+      <cliente>
+        <first_name>PAULINE</first_name>
+        <last_name>HENRY</last_name>
+        <email>PAULINE.HENRY@sakilacustomer.org</email>
+        <posta_code>83401</posta_code>
+        <city>Torren</city>
+        <country>Mexico</country>
+        <status>new</status>
+      </cliente>
+    </InfoCliente>
+    <InfoProduto>
+      <produto>
+        <_id>805</_id>
+        <categoria>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>Mid-Range Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>Basic Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Basic Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Medium (5-6.4 inches)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>Medium Storage</sub_category>
+          </categoria>
+        </categoria>
+        <list_price>12500</list_price>
+        <brand>vivo</brand>
+        <model>Vivo Y15</model>
+      </produto>
+    </InfoProduto>
+    <InfoGeral>
+      <id>1</id>
+      <NIF>123456789</NIF>
+      <first_name>PARCEIRO</first_name>
+      <last_name>EXEMPLO</last_name>
+      <Ano_Fiscal>05-2023</Ano_Fiscal>
+      <address>Morada de exemplo</address>
+    </InfoGeral>
+  </data>
+  <data>
+    <_id>659d534fe54606396df95ce7</_id>
+    <invoice_id>1015391</invoice_id>
+    <date>2023-10-02T00:00:00Z</date>
+    <customer_id>284</customer_id>
+    <sales>
+      <sale>
+        <id>14775</id>
+        <total_with_vat>734.9895</total_with_vat>
+        <quantity>1</quantity>
+        <product_id>292</product_id>
+      </sale>
+    </sales>
+    <InfoCliente>
+      <cliente>
+        <first_name>SONIA</first_name>
+        <last_name>GREGORY</last_name>
+        <email>SONIA.GREGORY@sakilacustomer.org</email>
+        <posta_code>46044</posta_code>
+        <city>Otsu</city>
+        <country>Japan</country>
+        <status>new</status>
+      </cliente>
+    </InfoCliente>
+    <InfoProduto>
+      <produto>
+        <_id>292</_id>
+        <categoria>
+          <categoria>
+            <category>Price Range</category>
+            <sub_category>High-End Smartphones</sub_category>
+          </categoria>
+          <categoria>
+            <category>Performance</category>
+            <sub_category>High-Performance</sub_category>
+          </categoria>
+          <categoria>
+            <category>Camera Quality</category>
+            <sub_category>Pro-Level Cameras</sub_category>
+          </categoria>
+          <categoria>
+            <category>Screen Size</category>
+            <sub_category>Large (6.5 inches and above)</sub_category>
+          </categoria>
+          <categoria>
+            <category>Battery Life</category>
+            <sub_category>Average Battery Life</sub_category>
+          </categoria>
+          <categoria>
+            <category>Storage Capacity</category>
+            <sub_category>High Storage</sub_category>
+          </categoria>
+        </categoria>
+        <list_price>69999</list_price>
+        <brand>oneplus</brand>
+        <model>OnePlus 12 Pro</model>
+      </produto>
+    </InfoProduto>
+    <InfoGeral>
+      <id>1</id>
+      <NIF>123456789</NIF>
+      <first_name>PARCEIRO</first_name>
+      <last_name>EXEMPLO</last_name>
+      <Ano_Fiscal>05-2023</Ano_Fiscal>
+      <address>Morada de exemplo</address>
+    </InfoGeral>
+  </data>
+  </Root>

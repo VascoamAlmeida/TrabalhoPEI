@@ -1,0 +1,83 @@
+CRIAÇÃO DA COLEÇÃO: Devolucoes
+
+A coleção mantém a estrutura original do projeto, mas o indicador de devolução precoce é calculado de acordo com o enunciado: até 3 dias após a compra = "early"; acima de 3 dias = "regular".
+
+[
+  {
+    $addFields: {
+      num_dia_return: {
+        $dateDiff: {
+          startDate: "$date_sale",
+          endDate: "$date_return",
+          unit: "day"
+        }
+      }
+    }
+  },
+  {
+    $addFields: {
+      return: {
+        $cond: [
+          { $lte: ["$num_dia_return", 3] },
+          "early",
+          "regular"
+        ]
+      }
+    }
+  },
+  {
+    $lookup: {
+      from: "sales_lines",
+      localField: "invoice_id",
+      foreignField: "invoice_id",
+      as: "ItemsTodosVenda"
+    }
+  },
+  {
+    $lookup: {
+      from: "ListaProdutos",
+      localField: "ItemsTodosVenda.product_id",
+      foreignField: "_id",
+      as: "InfoItensTodos"
+    }
+  },
+  {
+    $addFields: {
+      id: 1,
+      NIF: 123456789,
+      first_name: "ANDRE",
+      last_name: "ALMEIDA",
+      Ano_Fiscal: "2020",
+      address: "420 PEIREIRA SILVA"
+    }
+  },
+  {
+    $project: {
+      invoice_id: 1,
+      date_sale: 1,
+      date_return: 1,
+      product_id: 1,
+      customer_id: 1,
+      num_dia_return: 1,
+      return: 1,
+      "InfoProdutoDevolvido.categoria": 1,
+      "InfoProdutoDevolvido._id": 1,
+      "InfoProdutoDevolvido.model": 1,
+      "InfoProdutoDevolvido.brand": 1,
+      "InfoProdutoDevolvido.list_price": 1,
+      "InfoItensTodos._id": 1,
+      "InfoItensTodos.list_price": 1,
+      "InfoItensTodos.brand": 1,
+      "InfoItensTodos.model": 1,
+      "InfoItensTodos.categoria": 1,
+      InfoGeral: {
+        id: "$id",
+        NIF: "$NIF",
+        first_name: "$first_name",
+        last_name: "$last_name",
+        Ano_Fiscal: "$Ano_Fiscal",
+        address: "$address"
+      }
+    }
+  }
+]
